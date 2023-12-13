@@ -3,6 +3,8 @@ const int in1 = 8;
 const int in2 = 9;
 const int in3 = 10;
 const int in4 = 11;
+//change the period you want to actuate:
+const int period = 250;
 int E1 = 5; 
 int M1 = 4; 
 int E2 = 6; 
@@ -26,23 +28,23 @@ digitalWrite(E1,HIGH) ;
 digitalWrite(E2,LOW) ;
 digitalWrite(in1,LOW) ;
 digitalWrite(in3, LOW) ;
-delay(500) ;
+delay(period) ;
 //actuate the second module for 500 ms
 digitalWrite(E1,LOW) ;
 digitalWrite(E2,HIGH) ;
 digitalWrite(in1,LOW) ;
 digitalWrite(in3, LOW) ;
-delay(500) ;
+delay(period) ;
 //actuate the third module for 500 ms
 digitalWrite(E1,LOW) ;
 digitalWrite(E2,LOW) ;
 digitalWrite(in1,HIGH) ;
 digitalWrite(in3, LOW) ;
-delay(500) ;
+delay(period) ;
 //actuate the last module for 500 ms
 digitalWrite(E1,LOW) ;
 digitalWrite(E2,LOW) ;
 digitalWrite(in1,LOW) ;
 digitalWrite(in3, HIGH) ;
-delay(500) ;
+delay(period) ;
 }
