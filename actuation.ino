@@ -29,18 +29,21 @@ digitalWrite(E2,LOW) ;
 digitalWrite(in1,LOW) ;
 digitalWrite(in3, LOW) ;
 delay(period) ;
+  
 //actuate the second module
 digitalWrite(E1,LOW) ;
 digitalWrite(E2,HIGH) ;
 digitalWrite(in1,LOW) ;
 digitalWrite(in3, LOW) ;
 delay(period) ;
+  
 //actuate the third module
 digitalWrite(E1,LOW) ;
 digitalWrite(E2,LOW) ;
 digitalWrite(in1,HIGH) ;
 digitalWrite(in3, LOW) ;
 delay(period) ;
+  
 //actuate the fourth module
 digitalWrite(E1,LOW) ;
 digitalWrite(E2,LOW) ;
