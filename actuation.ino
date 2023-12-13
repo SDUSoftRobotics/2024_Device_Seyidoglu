@@ -3,7 +3,7 @@ const int in1 = 8;
 const int in2 = 9;
 const int in3 = 10;
 const int in4 = 11;
-//change the period you want to actuate:
+//set the actuation period:
 const int period = 250;
 int E1 = 5; 
 int M1 = 4; 
@@ -23,25 +23,25 @@ pinMode(M2, OUTPUT);
 
 void loop()
 {
-//actuate the first module for 500 ms
+//actuate the first module
 digitalWrite(E1,HIGH) ;
 digitalWrite(E2,LOW) ;
 digitalWrite(in1,LOW) ;
 digitalWrite(in3, LOW) ;
 delay(period) ;
-//actuate the second module for 500 ms
+//actuate the second module
 digitalWrite(E1,LOW) ;
 digitalWrite(E2,HIGH) ;
 digitalWrite(in1,LOW) ;
 digitalWrite(in3, LOW) ;
 delay(period) ;
-//actuate the third module for 500 ms
+//actuate the third module
 digitalWrite(E1,LOW) ;
 digitalWrite(E2,LOW) ;
 digitalWrite(in1,HIGH) ;
 digitalWrite(in3, LOW) ;
 delay(period) ;
-//actuate the last module for 500 ms
+//actuate the fourth module
 digitalWrite(E1,LOW) ;
 digitalWrite(E2,LOW) ;
 digitalWrite(in1,LOW) ;
